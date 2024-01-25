@@ -1,0 +1,11 @@
+.sideBar {
+  background-color: rgb(35, 39, 60);
+  background-color: rgb(27, 27, 27);
+  color: rgb(200, 199, 205);
+}
+
+.sideBar a:link,
+.sideBar a:visited {
+  color: rgb(225, 224, 230);
+  text-decoration: none;
+}

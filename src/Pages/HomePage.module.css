@@ -1,0 +1,49 @@
+.main {
+  background-image: url("../../img/skybuilding.webp");
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.section {
+  display: grid;
+  grid-template-columns: 40fr 60fr;
+}
+
+.textBox {
+  min-height: 90vh;
+  backdrop-filter: blur(1rem);
+  padding: 3.2rem;
+  color: #333;
+}
+
+.textBox h1 {
+  font-size: 5.2rem;
+  letter-spacing: -2.5px;
+  color: #3d3b3a;
+}
+
+.textBox h2 {
+  font-size: 3.6rem;
+  font-weight: 600;
+  letter-spacing: -1.5px;
+  color: #3d3b3a;
+}
+
+.imgBox {
+  justify-self: center;
+  align-self: center;
+  padding: 6.4rem;
+}
+.imgBox a:link,
+.imgBox a:visited {
+  font-size: 6.4rem;
+  text-decoration: none;
+  color: rgb(247, 247, 250);
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.8));
+  letter-spacing: -2.5px;
+}
+.imgBox a:hover {
+  color: rgb(200, 199, 205);
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.6));
+}

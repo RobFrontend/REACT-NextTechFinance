@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+  background-color: rgb(247, 247, 250);
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+/* 
+Logo: #1b1b1b
+LightLogo: #3d3b3a
+
+NavBar rgb(62,195,213)
+SideBar rgb(35,39,60), #1b1b1b
+Expense rgb(255,84,96)
+Income rgb(65,220,101)
+Arrow rgb(200,199,205)
+Date rgb(225,224,230)
+Background rgb(247,247,250)
+TableRow rgb(255,255,255)
+
+*/
