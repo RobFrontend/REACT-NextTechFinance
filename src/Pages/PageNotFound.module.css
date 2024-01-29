@@ -1,0 +1,30 @@
+.main {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 15fr 85fr;
+  overflow: hidden;
+}
+
+.main h1 {
+  font-size: 5.2rem;
+  justify-self: center;
+  align-self: center;
+  animation-name: blink;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+  from {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+}

@@ -2,48 +2,116 @@
   background-image: url("../../img/skybuilding.webp");
   background-position: center;
   background-size: cover;
-  min-height: 100vh;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .section {
   display: grid;
   grid-template-columns: 40fr 60fr;
+  height: 100vh;
 }
 
 .textBox {
-  min-height: 90vh;
+  height: 100vh;
   backdrop-filter: blur(1rem);
-  padding: 3.2rem;
-  color: #333;
+  padding: 9.6rem 6.4rem;
 }
 
 .textBox h1 {
-  font-size: 5.2rem;
+  font-size: 6.2rem;
   letter-spacing: -2.5px;
   color: #3d3b3a;
+  margin-bottom: 6.4rem;
 }
 
 .textBox h2 {
-  font-size: 3.6rem;
+  font-size: 4.2rem;
   font-weight: 600;
   letter-spacing: -1.5px;
   color: #3d3b3a;
+  line-height: 1.3;
+  margin-bottom: 4.8rem;
+}
+.textBox p {
+  font-size: 2rem;
+  line-height: 1.5;
+  color: #1b1b1b;
+  margin-bottom: 9.6rem;
+}
+
+.textBox div {
+  text-align: center;
+}
+
+.textBox a:link,
+.textBox a:visited {
+  text-decoration: none;
+  font-size: 3.2rem;
+  color: #3d3b3a;
+  background-color: rgb(247, 247, 250, 0.4);
+  padding: 1.2rem 2.4rem;
+  letter-spacing: -1px;
+  transition: all 0.6s;
+}
+.textBox a:hover {
+  color: #1b1b1b;
+  background-color: rgb(247, 247, 250, 0.6);
 }
 
 .imgBox {
   justify-self: center;
   align-self: center;
+}
+
+.heroBoxes {
   padding: 6.4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 9.6rem;
 }
-.imgBox a:link,
-.imgBox a:visited {
-  font-size: 6.4rem;
+
+.heroBoxes a:link,
+.heroBoxes a:visited {
   text-decoration: none;
-  color: rgb(247, 247, 250);
-  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.8));
-  letter-spacing: -2.5px;
 }
-.imgBox a:hover {
-  color: rgb(200, 199, 205);
-  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.6));
+
+.heroBoxes div {
+  background-color: rgb(61, 59, 58, 0.8);
+  text-align: center;
+  padding: 1.8rem;
+  cursor: pointer;
+  transition: all 0.6s;
+}
+.heroBoxes div:hover {
+  background-color: rgb(61, 59, 58, 0.9);
+  transform: translateY(-0.6rem);
+}
+
+.heroBox1 {
+  grid-row: 1;
+  grid-column: 2;
+}
+.heroBox2 {
+  grid-row: 2;
+  grid-column: 1;
+}
+.heroBox3 {
+  grid-row: 2;
+  grid-column: 2;
+}
+
+h3 {
+  font-size: 2.4rem;
+  padding: 2rem;
+  color: rgb(247, 247, 250);
+  font-weight: 400;
+}
+
+p {
+  font-weight: 200;
+  font-size: 1.8rem;
+  color: rgb(247, 247, 250);
+  line-height: 1.05;
 }

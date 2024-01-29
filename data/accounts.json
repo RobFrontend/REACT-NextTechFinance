@@ -1,0 +1,32 @@
+{
+  "accounts": [
+    {
+      "id": 1,
+      "nick": "john1988",
+      "password": "1111",
+      "firstname": "John",
+      "lastname": "Smith",
+      "email": "robert.grabowski97@gmail.com",
+      "birthyear": 1988,
+      "pin": 1111,
+      "balance": 4500,
+      "loan": 500,
+      "movements": [500, 500, -50, -200, 250, 3500],
+      "status": "open"
+    },
+    {
+      "id": 2,
+      "nick": "rob97",
+      "password": "robson97",
+      "firstname": "Robert",
+      "lastname": "Grabowski",
+      "email": "robert.grabowski97@gmail.com",
+      "birthyear": 1997,
+      "pin": 2137,
+      "balance": 20000,
+      "loan": 0,
+      "movements": [500, -500, 4000, -1000, 17000],
+      "status": "open"
+    }
+  ]
+}

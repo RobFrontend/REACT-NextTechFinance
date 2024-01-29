@@ -1,5 +1,87 @@
 .main {
   display: grid;
-  grid-template-columns: 30fr 70fr;
-  min-height: 100vh;
+  grid-template-columns: 15fr 85fr;
+  height: 100vh;
+  color: #1b1b1b;
+  overflow: hidden;
+}
+
+.main section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main section img {
+  width: 30rem;
+  align-self: flex-start;
+  padding: 1.8rem;
+}
+
+.main article {
+  padding: 4.8rem;
+  background: linear-gradient(
+      to top right,
+      rgb(247, 247, 250),
+      rgb(247, 247, 250),
+      rgb(247, 247, 250),
+      rgb(247, 247, 250, 0)
+    ),
+    url("img/suitcaseman.webp");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 40%;
+}
+
+.main h1 {
+  color: #3d3b3a;
+  font-size: 3.6rem;
+  margin-bottom: 3.2rem;
+  letter-spacing: -1px;
+  animation-name: blink;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+  from {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.4;
+  }
+}
+
+.main p,
+.main h2 {
+  color: #1b1b1b;
+  max-width: 130rem;
+}
+
+.main h2 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-bottom: 1.4rem;
+  letter-spacing: -0.5px;
+}
+
+.main p {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  line-height: 1.05;
+}
+
+.logoWithBackground {
+  background: linear-gradient(
+      to right,
+      rgb(247, 247, 250),
+      rgb(247, 247, 250),
+      rgb(247, 247, 250, 0.5),
+      rgb(247, 247, 250, 0)
+    ),
+    url("img/skybuilding.webp");
+  background-position: center;
 }

@@ -2,10 +2,50 @@
   background-color: rgb(35, 39, 60);
   background-color: rgb(27, 27, 27);
   color: rgb(200, 199, 205);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .sideBar a:link,
 .sideBar a:visited {
+  font-size: 2rem;
   color: rgb(225, 224, 230);
   text-decoration: none;
+  padding: 1.2rem 2.4rem;
+  width: fit-content;
+}
+.sideBar a:last-child {
+  border: 1px solid rgba(225, 224, 230, 0.5);
+  border-radius: 5px;
+  backdrop-filter: blur(0.05rem);
+  transition: all 0.5s;
+}
+.sideBar a:last-child:hover {
+  border: 1px solid rgba(225, 224, 230, 0.8);
+  border-radius: 5px;
+  backdrop-filter: blur(0.3rem);
+}
+
+.sideBar img {
+  width: 20rem;
+  align-self: flex-start;
+  padding: 1.8rem;
+}
+
+.sideBar div {
+  background: linear-gradient(
+      to top,
+      rgb(27, 27, 27),
+      rgb(27, 27, 27, 0.8),
+      rgb(27, 27, 27, 0.6),
+      rgb(27, 27, 27, 0)
+    ),
+    url("img/skybuilding.webp");
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  gap: 9.6rem;
+  padding: 12.8rem 1.8rem;
+  max-height: 80vh;
 }
