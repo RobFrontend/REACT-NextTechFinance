@@ -1,0 +1,58 @@
+.main {
+  height: 100vh;
+  background: url("img/skybuilding.webp");
+  background-position: bottom;
+}
+
+.main h1 {
+  font-size: 4.2rem;
+  font-weight: 500;
+  letter-spacing: -2px;
+}
+
+.article {
+  max-width: 100rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.4rem;
+}
+
+.article div {
+  background-color: rgb(247, 247, 250, 0.8);
+  padding: 1.2rem;
+}
+
+.article h2 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  letter-spacing: -1px;
+}
+
+.article p {
+  color: #1b1b1b;
+}
+
+.balanceBox {
+}
+
+.balanceBox span {
+  font-weight: 500;
+}
+
+.movements {
+  display: flex;
+  flex-direction: column;
+}
+
+.movements p:nth-child(2) {
+  background-color: rgb(65, 220, 101, 0.5);
+}
+
+.movements p:last-child {
+  background-color: rgb(255, 84, 96, 0.5);
+}
+
+.movements p {
+  padding: 0.6rem;
+}

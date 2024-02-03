@@ -20,12 +20,12 @@ function Register() {
           <p>User name:</p>
           <input type="text" placeholder="JS2024..." />
           <p>Birth year:</p>
-          <input type="text" placeholder="2006..." />
+          <input type="text" placeholder="12345678" />
           <p>Password (min 8 characters):</p>
           <input type="password" />
           <p>Repeat password:</p>
           <input type="password" />
-          <button type="submit">Login</button>
+          <button type="submit">Create account</button>
         </form>
       </div>
     </main>

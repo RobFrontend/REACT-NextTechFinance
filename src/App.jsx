@@ -6,8 +6,52 @@ import Login from "./Pages/Login";
 import Register from "./Pages/Register";
 import AboutUs from "./Pages/AboutUs";
 import PageNotFound from "./Pages/PageNotFound";
+import { useEffect, useState } from "react";
+
+const BASE_URL = "http://localhost:9000";
 
 function App() {
+  const [accounts, setAccounts] = useState([]);
+
+  const [deposits, setDeposits] = useState([]);
+  const [withdraws, setWithdraws] = useState([]);
+
+  useEffect(function () {
+    async function fetchAccounts() {
+      try {
+        const res = await fetch(`${BASE_URL}/accounts`);
+        const data = await res.json();
+        setAccounts(data[1]);
+      } catch (err) {
+        console.log(err);
+      }
+    }
+    fetchAccounts();
+  }, []);
+
+  useEffect(
+    function () {
+      setDeposits(
+        accounts.movements && accounts.movements.length > 0
+          ? accounts.movements.filter((mov) => mov > 0).map((dep) => `$${dep} `)
+          : "no movements"
+      );
+    },
+    [accounts]
+  );
+  useEffect(
+    function () {
+      setWithdraws(
+        accounts.movements && accounts.movements.length > 0
+          ? accounts.movements
+              .filter((mov) => mov < 0)
+              .map((wit) => `$${-wit} `)
+          : "no movements"
+      );
+    },
+    [accounts]
+  );
+
   return (
     <div>
       <BrowserRouter>
