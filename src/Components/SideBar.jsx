@@ -11,7 +11,7 @@ function SideBar() {
 
         <Link to="/register">Create Account</Link>
       </div>
-      <img src="img/LogoSmallLight.png" alt="Logo" />
+      <img src="/LogoSmallLight.png" alt="Logo" />
     </div>
   );
 }

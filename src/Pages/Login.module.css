@@ -1,6 +1,6 @@
 .main {
   height: 100vh;
-  background: url("img/login.webp");
+  background: url("/login.webp");
   background-position: top;
 }
 

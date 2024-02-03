@@ -1,6 +1,6 @@
 .main {
   height: 100vh;
-  background: url("img/skybuilding.webp");
+  background: url("/skybuilding.webp");
   background-position: bottom;
 }
 

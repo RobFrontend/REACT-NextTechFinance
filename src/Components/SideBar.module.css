@@ -41,7 +41,7 @@
       rgb(27, 27, 27, 0.6),
       rgb(27, 27, 27, 0)
     ),
-    url("img/skybuilding.webp");
+    url("/skybuilding.webp");
   background-position: center;
   display: flex;
   flex-direction: column;

@@ -61,7 +61,7 @@ function AboutUs() {
           </div>
         </article>
         <div className={styles.logoWithBackground}>
-          <img src="img/LogoSmallDark.png" alt="Logo" />
+          <img src="/LogoSmallDark.png" alt="Logo" />
         </div>
       </section>
     </main>

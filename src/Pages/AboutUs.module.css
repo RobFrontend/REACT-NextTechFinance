@@ -27,7 +27,7 @@
       rgb(247, 247, 250),
       rgb(247, 247, 250, 0)
     ),
-    url("img/suitcaseman.webp");
+    url("/suitcaseman.webp");
   background-position: top right;
   background-repeat: no-repeat;
   background-size: 40%;
@@ -82,6 +82,6 @@
       rgb(247, 247, 250, 0.5),
       rgb(247, 247, 250, 0)
     ),
-    url("img/skybuilding.webp");
+    url("/skybuilding.webp");
   background-position: center;
 }
