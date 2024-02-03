@@ -1,5 +1,5 @@
 .information {
-  backdrop-filter: blur(0.5rem) brightness(0.7);
+  backdrop-filter: blur(0.5rem) brightness(0.6);
   max-width: 120rem;
   margin: 0 auto;
   display: grid;
@@ -29,5 +29,5 @@
 }
 
 .information h1 {
-  color: rgb(247, 247, 250, 0.6);
+  color: rgb(247, 247, 250, 0.75);
 }

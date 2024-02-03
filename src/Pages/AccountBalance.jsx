@@ -39,7 +39,7 @@ function AccountBalance() {
     return (
       <main className={styles.main}>
         <PageNav />
-        <MustLogin />
+        <MustLogin>balances</MustLogin>
       </main>
     );
 

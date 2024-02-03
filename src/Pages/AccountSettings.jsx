@@ -9,7 +9,7 @@ function AccountSettings() {
     return (
       <main className={styles.main}>
         <PageNav />
-        <MustLogin />
+        <MustLogin>settings</MustLogin>
       </main>
     );
   return (
