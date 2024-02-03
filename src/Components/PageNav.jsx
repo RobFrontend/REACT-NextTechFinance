@@ -27,7 +27,9 @@ function PageNav() {
             <NavLink to="/login">Login</NavLink>
           </li>
         ) : (
-          <button onClick={handleClick}>Logout</button>
+          <button className={styles.logout} onClick={handleClick}>
+            Logout
+          </button>
         )}
       </ul>
     </nav>

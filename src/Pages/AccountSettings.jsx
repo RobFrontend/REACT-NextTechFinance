@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import PageNav from "../Components/PageNav";
 import { useAuth } from "../context/AuthContext";
 import styles from "./AccountBalance.module.css";
+import MustLogin from "../Components/MustLogin";
 
 function AccountSettings() {
   const { user, isAuthenticated } = useAuth();
@@ -9,8 +10,7 @@ function AccountSettings() {
     return (
       <main className={styles.main}>
         <PageNav />
-        <h1>Login to see your account settings</h1>
-        <Link to="/login">Login</Link>
+        <MustLogin />
       </main>
     );
   return (

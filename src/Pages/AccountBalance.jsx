@@ -3,6 +3,7 @@ import PageNav from "../Components/PageNav";
 import { useAuth } from "../context/AuthContext";
 import styles from "./AccountBalance.module.css";
 import { useEffect, useState } from "react";
+import MustLogin from "../Components/MustLogin";
 
 function AccountBalance() {
   const { user, isAuthenticated } = useAuth();
@@ -38,8 +39,7 @@ function AccountBalance() {
     return (
       <main className={styles.main}>
         <PageNav />
-        <h1>Login to see your balances</h1>
-        <Link to="/login">Login</Link>
+        <MustLogin />
       </main>
     );
 
