@@ -1,6 +1,11 @@
 .main {
   height: 100vh;
-  background: url("/login.webp");
+  background: linear-gradient(
+      to top,
+      rgba(27, 27, 27, 0.1),
+      rgba(27, 27, 27, 0.1)
+    ),
+    url("/login.webp");
   background-position: top;
 }
 

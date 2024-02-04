@@ -66,7 +66,6 @@ function AccountBalance() {
             {withdraws && withdraws.length >= 1 ? withdraws : "No withdrawals"}
           </p>
         </div>
-
         <div>
           <h2>History:</h2>
         </div>

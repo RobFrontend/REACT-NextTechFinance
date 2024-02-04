@@ -46,11 +46,11 @@
 }
 
 .movements p:nth-child(2) {
-  background-color: rgb(65, 220, 101, 0.5);
+  background-color: rgb(65, 220, 101, 0.1);
 }
 
 .movements p:last-child {
-  background-color: rgb(255, 84, 96, 0.5);
+  background-color: rgb(255, 84, 96, 0.1);
 }
 
 .movements p {
