@@ -1,0 +1,72 @@
+.main {
+  background: url("/entry.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.main section {
+  max-width: 120rem;
+  margin: 0 auto;
+  background-color: rgb(247, 247, 250, 0.4);
+  padding: 3.2rem;
+  margin-top: 9.6rem;
+  backdrop-filter: blur(0.5rem);
+}
+
+.main article {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4.8rem;
+  margin-top: 4.8rem;
+}
+
+.main article div {
+  cursor: pointer;
+  background-color: rgb(247, 247, 250, 0.2);
+  padding: 1.8rem;
+  transition: all 0.5s;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.main article div:hover {
+  background-color: rgb(247, 247, 250, 0.4);
+  transform: translateY(-0.6rem);
+}
+
+.main h1 {
+  color: #3d3b3a;
+  font-size: 4.2rem;
+}
+
+.main h2 {
+  color: #3d3b3a;
+  font-size: 3.2rem;
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+}
+
+.main p {
+  color: #1b1b1b;
+  font-size: 2.4rem;
+}
+
+.main section a:link,
+.main section a:visited {
+  color: #3d3b3a;
+  font-size: 3.2rem;
+  text-decoration: none;
+  padding: 1.8rem;
+  border: 1px solid #3d3b3a;
+  align-self: center;
+  justify-self: center;
+  width: fit-content;
+  transition: all 0.5s;
+}
+.main section a:hover {
+  color: #1b1b1b;
+  border: 1px solid #3d3b3a00;
+}

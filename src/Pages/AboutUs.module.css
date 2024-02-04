@@ -33,6 +33,13 @@
   background-size: 40%;
 }
 
+.main article div {
+  background: url("/chaosTriangle.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .main h1 {
   color: #3d3b3a;
   font-size: 3.6rem;
